@@ -27,7 +27,7 @@ module TrainPlugins
       end
 
       def uri
-        "digitalocean://#{@options[:region]}"
+        "digitalocean://"
       end
 
       def droplet_client
