@@ -3,6 +3,10 @@
 require 'rake/testtask'
 require 'rubocop/rake_task'
 
+# run tests
+desc 'default checks'
+task default: [:lint]
+
 # Rubocop
 desc 'Run Rubocop lint checks'
 task :rubocop do

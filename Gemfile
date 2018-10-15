@@ -9,5 +9,5 @@ group :development do
   gem 'inspec', '>= 2.2.112' # We need InSpec for the test harness while developing.
   gem 'minitest'
   gem 'rake'
-  gem 'rubocop', '= 0.49.1' # Need to keep in sync with main InSpec project, so config files will work
+  gem 'rubocop', '~> 0.59'
 end

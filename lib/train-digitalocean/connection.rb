@@ -27,12 +27,13 @@ module TrainPlugins
       end
 
       def uri
-        "digitalocean://"
+        'digitalocean://'
       end
 
       def droplet_client
         klass = ::DropletKit::Client
         return klass.new(access_token: @options[:access_token]) unless cache_enabled?(:api_call)
+
         @cache[:api_call][klass.to_s.to_sym] ||= klass.new(access_token: @options[:access_token])
       end
 
