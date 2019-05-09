@@ -1,3 +1,7 @@
+* **[Project State](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md): Maintained**
+* **Issues [Response Time Maximum](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md): 7 days or more**
+* **Pull Request [Response Time Maximum](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md): 7 days or more**
+
 # Digitalocean transport plugin for Train
 
 This plugin allows applications that rely on Train to communicate with the Digitalocean API.  For example, InSpec uses this to perform compliance checks against Digitalocean infrastructure. Train plugins are managed by InSpec CLI.
@@ -35,7 +39,7 @@ $ inspec plugin install train-digitalocean
 In order to use this example, you need to create a [DigitalOcean API Token](https://cloud.digitalocean.com/account/api/tokens) and export it as an environment variable.
 
 ```bash
-export DIGITALOCEAN_TOKEN="Put Your Token Here" 
+export DIGITALOCEAN_TOKEN="Put Your Token Here"
 ```
 
 Verify the plugin and the connection to Digitalocean
