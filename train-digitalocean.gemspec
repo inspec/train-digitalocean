@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   ).reject { |f| File.directory?(f) }
   spec.require_paths = ['lib']
   spec.add_dependency 'droplet_kit', '~> 2.4'
-  spec.add_dependency 'train', '~> 1.4'
+  spec.add_dependency 'train', '>= 1.4', '< 4.0'
 end
