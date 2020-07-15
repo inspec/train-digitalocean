@@ -1,5 +1,5 @@
-require 'droplet_kit'
-require 'train-digitalocean/platform'
+require "droplet_kit"
+require "train-digitalocean/platform"
 
 module TrainPlugins
   module Digitalocean
@@ -7,7 +7,7 @@ module TrainPlugins
       include TrainPlugins::Digitalocean::Platform
 
       def initialize(options)
-        msg = 'You need to set the Digitalocean access token via \'export DIGITALOCEAN_TOKEN=.\''
+        msg = "You need to set the Digitalocean access token via 'export DIGITALOCEAN_TOKEN=.'"
         if options.nil? || options[:access_token].nil?
           raise Train::TransportError, msg
         end
@@ -27,7 +27,7 @@ module TrainPlugins
       end
 
       def uri
-        'digitalocean://'
+        "digitalocean://"
       end
 
       def droplet_client
